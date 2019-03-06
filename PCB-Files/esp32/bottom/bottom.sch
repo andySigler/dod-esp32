@@ -3854,25 +3854,25 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <packages>
 <package name="MXR9150MZ">
 <smd name="1" x="3.2809" y="0.635" dx="2.963" dy="0.64" layer="1"/>
-<smd name="2" x="3.65125" y="1.905" dx="2.2225" dy="0.64" layer="1"/>
-<smd name="3" x="1.905" y="3.65125" dx="2.2225" dy="0.64" layer="1" rot="R90"/>
-<smd name="4" x="0.635" y="3.4925" dx="2.54" dy="0.64" layer="1" rot="R90"/>
-<smd name="5" x="-0.635" y="3.4925" dx="2.54" dy="0.64" layer="1" rot="R90"/>
-<smd name="6" x="-1.905" y="3.65125" dx="2.2225" dy="0.64" layer="1" rot="R90"/>
+<smd name="2" x="3.91625" y="1.905" dx="1.7225" dy="0.64" layer="1"/>
+<smd name="3" x="1.905" y="3.91625" dx="1.7225" dy="0.64" layer="1" rot="R90"/>
+<smd name="4" x="0.635" y="3.91625" dx="1.7225" dy="0.64" layer="1" rot="R90"/>
+<smd name="5" x="-0.635" y="3.91625" dx="1.7225" dy="0.64" layer="1" rot="R90"/>
+<smd name="6" x="-1.905" y="3.91625" dx="1.7225" dy="0.64" layer="1" rot="R90"/>
 <wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
 <wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="21"/>
-<smd name="11" x="-1.905" y="-3.66625" dx="2.2225" dy="0.64" layer="1" rot="R90"/>
-<smd name="12" x="-0.635" y="-3.5075" dx="2.54" dy="0.64" layer="1" rot="R90"/>
-<smd name="13" x="0.635" y="-3.5075" dx="2.54" dy="0.64" layer="1" rot="R90"/>
-<smd name="14" x="1.905" y="-3.66625" dx="2.2225" dy="0.64" layer="1" rot="R90"/>
-<smd name="16" x="3.4925" y="-0.635" dx="2.54" dy="0.64" layer="1"/>
-<smd name="15" x="3.65125" y="-1.905" dx="2.2225" dy="0.64" layer="1"/>
-<smd name="7" x="-3.66625" y="1.905" dx="2.2225" dy="0.64" layer="1"/>
-<smd name="8" x="-3.5075" y="0.635" dx="2.54" dy="0.64" layer="1"/>
-<smd name="9" x="-3.5075" y="-0.635" dx="2.54" dy="0.64" layer="1"/>
-<smd name="10" x="-3.66625" y="-1.905" dx="2.2225" dy="0.64" layer="1"/>
+<smd name="11" x="-1.905" y="-3.91625" dx="1.7225" dy="0.64" layer="1" rot="R90"/>
+<smd name="12" x="-0.635" y="-3.91625" dx="1.7225" dy="0.64" layer="1" rot="R90"/>
+<smd name="13" x="0.635" y="-3.91625" dx="1.7225" dy="0.64" layer="1" rot="R90"/>
+<smd name="14" x="1.905" y="-3.91625" dx="1.7225" dy="0.64" layer="1" rot="R90"/>
+<smd name="16" x="3.91625" y="-0.635" dx="1.7225" dy="0.64" layer="1"/>
+<smd name="15" x="3.91625" y="-1.905" dx="1.7225" dy="0.64" layer="1"/>
+<smd name="7" x="-3.91625" y="1.905" dx="1.7225" dy="0.64" layer="1"/>
+<smd name="8" x="-3.91625" y="0.635" dx="1.7225" dy="0.64" layer="1"/>
+<smd name="9" x="-3.91625" y="-0.635" dx="1.7225" dy="0.64" layer="1"/>
+<smd name="10" x="-3.91625" y="-1.905" dx="1.7225" dy="0.64" layer="1"/>
 <circle x="1.2696" y="0.6348" radius="0.2116" width="0.127" layer="21"/>
 </package>
 </packages>
