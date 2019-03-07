@@ -31,7 +31,7 @@ esp_sleep_wakeup_cause_t wakeup_code;
 ////////////////////////////////
 ////////////////////////////////
 
-#define SPEAKER_PIN                 12
+#define SPEAKER_PIN                 23
 #define SPEAKER_CHANNEL             0
 #define SPEAKER_RESOLUTION          8
 #define SPEAKER_FREQ_DEFAULT        800
@@ -45,6 +45,22 @@ esp_sleep_wakeup_cause_t wakeup_code;
 #define SPEAKER_EVENT_FACE           3
 #define SPEAKER_EVENT_SUCCESS        4
 #define SPEAKER_EVENT_FAIL           5
+
+////////////////////////////////
+////////////////////////////////
+////////////////////////////////
+
+#define TOTAL_HALL_SENSORS          3
+const uint8_t hall_pins[TOTAL_HALL_SENSORS] = {A7, A9, A1};
+int hall_value[TOTAL_HALL_SENSORS] = {0, };
+
+#define HALL_ENABLE_PIN             12
+
+#define TOTAL_ACCEL_AXES            3
+const uint8_t accel_pins[TOTAL_HALL_SENSORS] = {A4, A3, A2};
+int accel_value[TOTAL_HALL_SENSORS] = {0, };
+
+#define ACCEL_ENABLE_PIN            5
 
 ////////////////////////////////
 ////////////////////////////////
@@ -98,7 +114,13 @@ void block_until_touch_released() {
 ////////////////////////////////
 
 void update_accelerometer() {
-  //
+  Serial.print("Accel: ");
+  for (uint8_t i=0;i<TOTAL_ACCEL_AXES;i++) {
+    accel_value[i] = analogRead(accel_pins[i]);
+    Serial.print(accel_value[i]);Serial.print('\t');
+  }
+  delay(10);
+  Serial.println();
 }
 
 bool accelerometer_is_moving() {
@@ -106,11 +128,16 @@ bool accelerometer_is_moving() {
 }
 
 void enable_accelerometer() {
-  //
+  pinMode(ACCEL_ENABLE_PIN, OUTPUT);
+  digitalWrite(ACCEL_ENABLE_PIN, LOW);
+  for (uint8_t i=0;i<TOTAL_ACCEL_AXES;i++) {
+    pinMode(accel_pins[i], INPUT);
+  }
+  delay(1);
 }
 
 void disable_accelerometer() {
-  //
+  digitalWrite(ACCEL_ENABLE_PIN, HIGH);
 }
 
 int get_accelerometer_face() {
@@ -122,7 +149,13 @@ int get_accelerometer_face() {
 ////////////////////////////////
 
 void update_hall_sensors() {
-  //
+  Serial.print("Hall: ");
+  for (uint8_t i=0;i<TOTAL_HALL_SENSORS;i++) {
+    hall_value[i] = analogRead(hall_pins[i]);
+    Serial.print(hall_value[i]);Serial.print('\t');
+  }
+  delay(10);
+  Serial.println();
 }
 
 bool is_hall_sensor_active() {
@@ -130,11 +163,16 @@ bool is_hall_sensor_active() {
 }
 
 void enable_hall_sensors() {
-  //
+  pinMode(HALL_ENABLE_PIN, OUTPUT);
+  digitalWrite(HALL_ENABLE_PIN, HIGH);
+  for (uint8_t i=0;i<TOTAL_HALL_SENSORS;i++) {
+    pinMode(hall_pins[i], INPUT);
+  }
+  delay(1);
 }
 
 void disable_hall_sensors() {
-  //
+  digitalWrite(HALL_ENABLE_PIN, LOW);
 }
 
 int get_hall_sensors_face() {
@@ -146,7 +184,7 @@ int get_hall_sensors_face() {
 ////////////////////////////////
 
 bool wifi_set_hue_scene(int face) {
-  //
+  return true;
 }
 
 ////////////////////////////////
@@ -172,7 +210,56 @@ void speaker_setup() {
 }
 
 void speaker_play_event(int event_code) {
-  //
+  /*
+#define SPEAKER_EVENT_WAKEUP         1
+#define SPEAKER_EVENT_FALSE_WAKEUP   2
+#define SPEAKER_EVENT_FACE           3
+#define SPEAKER_EVENT_SUCCESS        4
+#define SPEAKER_EVENT_FAIL           5
+  */
+  switch (event_code) {
+    case SPEAKER_EVENT_WAKEUP:
+      speaker_set_frequency(1200);
+      speaker_set_volume(SPEAKER_PWM_MAX_VOL);
+      delay(200);
+      speaker_set_volume(SPEAKER_PWM_MIN_VOL);
+      break;
+    case SPEAKER_EVENT_FALSE_WAKEUP:
+      speaker_set_frequency(400);
+      speaker_set_volume(SPEAKER_PWM_MAX_VOL);
+      delay(1000);
+      speaker_set_volume(SPEAKER_PWM_MIN_VOL);
+      break;
+    case SPEAKER_EVENT_FACE:
+      speaker_set_frequency(2400);
+      speaker_set_volume(SPEAKER_PWM_MAX_VOL);
+      delay(200);
+      speaker_set_volume(SPEAKER_PWM_MIN_VOL);
+      break;
+    case SPEAKER_EVENT_SUCCESS:
+      speaker_set_frequency(1200);
+      speaker_set_volume(SPEAKER_PWM_MAX_VOL);
+      delay(100);
+      speaker_set_volume(SPEAKER_PWM_MIN_VOL);
+      delay(100);
+      speaker_set_volume(SPEAKER_PWM_MAX_VOL);
+      delay(100);
+      speaker_set_volume(SPEAKER_PWM_MIN_VOL);
+      delay(100);
+      speaker_set_volume(SPEAKER_PWM_MAX_VOL);
+      delay(100);
+      speaker_set_volume(SPEAKER_PWM_MIN_VOL);
+      delay(100);
+      break;
+    case SPEAKER_EVENT_FAIL:
+      speaker_set_frequency(400);
+      speaker_set_volume(SPEAKER_PWM_MAX_VOL);
+      delay(1000);
+      speaker_set_volume(SPEAKER_PWM_MIN_VOL);
+      break;
+    default:
+      break;
+  }
 }
 
 ////////////////////////////////
@@ -242,7 +329,9 @@ void setup(){
       speaker_play_event(SPEAKER_EVENT_FAIL);
     }
   }
-  speaker_play_event(SPEAKER_EVENT_FALSE_WAKEUP);
+  else {
+    speaker_play_event(SPEAKER_EVENT_FALSE_WAKEUP);
+  }
   go_to_sleep();
 }
 
