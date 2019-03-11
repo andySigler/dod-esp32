@@ -1594,20 +1594,34 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
 <part name="P+11" library="supply1" deviceset="VCC" device=""/>
-<part name="HALL_VCC" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
-<part name="HALL_1_IN" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
-<part name="HALL_2_IN" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
-<part name="HALL_GND" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="HALL_VCC1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
-<part name="HALL_1_OUT" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
-<part name="HALL_GND1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="HALL" library="Andy_Sigler" deviceset="HALLEFFECT-A1326" device=""/>
 <part name="C3" library="SparkFun" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP7" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP8" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP9" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP11" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP12" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP13" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP15" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP14" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP16" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP17" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP18" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP19" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP20" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TP23" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -1623,36 +1637,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="P+11" gate="VCC" x="30.48" y="45.72" smashed="yes">
 <attribute name="VALUE" x="27.94" y="43.18" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="HALL_VCC" gate="G$1" x="20.32" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.05" y="39.37" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="21.59" y="41.91" size="1.778" layer="97" rot="R90"/>
-</instance>
-<instance part="HALL_1_IN" gate="G$1" x="20.32" y="38.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.05" y="36.83" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="21.59" y="39.37" size="1.778" layer="97" rot="R90"/>
-</instance>
-<instance part="HALL_2_IN" gate="G$1" x="20.32" y="35.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.05" y="34.29" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="21.59" y="36.83" size="1.778" layer="97" rot="R90"/>
-</instance>
-<instance part="HALL_GND" gate="G$1" x="20.32" y="30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.05" y="29.21" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="21.59" y="31.75" size="1.778" layer="97" rot="R90"/>
-</instance>
 <instance part="P+1" gate="VCC" x="68.58" y="45.72" smashed="yes">
 <attribute name="VALUE" x="66.04" y="43.18" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="HALL_VCC1" gate="G$1" x="58.42" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="57.15" y="39.37" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="59.69" y="41.91" size="1.778" layer="97" rot="R90"/>
-</instance>
-<instance part="HALL_1_OUT" gate="G$1" x="58.42" y="38.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="57.15" y="36.83" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="59.69" y="39.37" size="1.778" layer="97" rot="R90"/>
-</instance>
-<instance part="HALL_GND1" gate="G$1" x="58.42" y="30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="57.15" y="29.21" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="59.69" y="31.75" size="1.778" layer="97" rot="R90"/>
 </instance>
 <instance part="GND1" gate="1" x="66.04" y="25.4" smashed="yes">
 <attribute name="VALUE" x="63.5" y="22.86" size="1.778" layer="96"/>
@@ -1671,22 +1657,112 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="GND3" gate="1" x="99.06" y="33.02" smashed="yes">
 <attribute name="VALUE" x="96.52" y="30.48" size="1.778" layer="96"/>
 </instance>
+<instance part="TP1" gate="G$1" x="5.08" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.81" y="39.37" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="6.35" y="41.91" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP2" gate="G$1" x="5.08" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.81" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="6.35" y="39.37" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP3" gate="G$1" x="5.08" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.81" y="34.29" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="6.35" y="36.83" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP4" gate="G$1" x="5.08" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.81" y="31.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="6.35" y="34.29" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP5" gate="G$1" x="5.08" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.81" y="29.21" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="6.35" y="31.75" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP6" gate="G$1" x="12.7" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.43" y="39.37" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="13.97" y="41.91" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP7" gate="G$1" x="12.7" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.43" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="13.97" y="39.37" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP8" gate="G$1" x="12.7" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.43" y="34.29" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="13.97" y="36.83" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP9" gate="G$1" x="12.7" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.43" y="31.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="13.97" y="34.29" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP10" gate="G$1" x="12.7" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.43" y="29.21" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="13.97" y="31.75" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP11" gate="G$1" x="53.34" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="52.07" y="39.37" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="54.61" y="41.91" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP12" gate="G$1" x="53.34" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="52.07" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="54.61" y="39.37" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP13" gate="G$1" x="53.34" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="52.07" y="34.29" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="54.61" y="36.83" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP15" gate="G$1" x="53.34" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="52.07" y="29.21" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="54.61" y="31.75" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP14" gate="G$1" x="58.42" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="57.15" y="39.37" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="59.69" y="41.91" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP16" gate="G$1" x="58.42" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="57.15" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="59.69" y="39.37" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP17" gate="G$1" x="58.42" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="57.15" y="34.29" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="59.69" y="36.83" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP18" gate="G$1" x="58.42" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="57.15" y="29.21" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="59.69" y="31.75" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP19" gate="G$1" x="152.4" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="151.13" y="49.53" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="153.67" y="52.07" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP20" gate="G$1" x="162.56" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="161.29" y="49.53" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="163.83" y="52.07" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP23" gate="G$1" x="152.4" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="151.13" y="54.61" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="153.67" y="57.15" size="1.778" layer="97" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<wire x1="22.86" y1="40.64" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="40.64" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="40.64" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="VCC" pin="VCC"/>
-<pinref part="HALL_VCC" gate="G$1" pin="TP"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
+<pinref part="TP6" gate="G$1" pin="TP"/>
+<junction x="15.24" y="40.64"/>
 </segment>
 <segment>
+<wire x1="55.88" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="40.64" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="40.64" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="HALL_VCC1" gate="G$1" pin="TP"/>
+<pinref part="TP11" gate="G$1" pin="TP"/>
+<pinref part="TP14" gate="G$1" pin="TP"/>
+<junction x="60.96" y="40.64"/>
 </segment>
 <segment>
 <pinref part="HALL" gate="G$1" pin="VCC"/>
@@ -1699,40 +1775,58 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="HALL_1" class="0">
 <segment>
-<wire x1="22.86" y1="38.1" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
 <label x="27.94" y="38.1" size="1.27" layer="95" xref="yes"/>
-<pinref part="HALL_1_IN" gate="G$1" pin="TP"/>
+<pinref part="TP2" gate="G$1" pin="TP"/>
+<pinref part="TP7" gate="G$1" pin="TP"/>
+<wire x1="15.24" y1="38.1" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
+<junction x="15.24" y="38.1"/>
 </segment>
 <segment>
-<wire x1="60.96" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="38.1" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
 <label x="66.04" y="38.1" size="1.27" layer="95" xref="yes"/>
-<pinref part="HALL_1_OUT" gate="G$1" pin="TP"/>
+<pinref part="TP12" gate="G$1" pin="TP"/>
+<pinref part="TP16" gate="G$1" pin="TP"/>
+<wire x1="60.96" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
+<junction x="60.96" y="38.1"/>
 </segment>
 </net>
 <net name="HALL_2" class="0">
 <segment>
-<wire x1="22.86" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
 <label x="27.94" y="35.56" size="1.27" layer="95" xref="yes"/>
-<pinref part="HALL_2_IN" gate="G$1" pin="TP"/>
+<pinref part="TP3" gate="G$1" pin="TP"/>
+<pinref part="TP8" gate="G$1" pin="TP"/>
+<wire x1="15.24" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
+<junction x="15.24" y="35.56"/>
 </segment>
 <segment>
-<pinref part="HALL" gate="G$1" pin="SIG"/>
-<wire x1="116.84" y1="48.26" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
-<label x="121.92" y="48.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="55.88" y1="35.56" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
+<label x="66.04" y="35.56" size="1.27" layer="95" xref="yes"/>
+<pinref part="TP13" gate="G$1" pin="TP"/>
+<pinref part="TP17" gate="G$1" pin="TP"/>
+<wire x1="60.96" y1="35.56" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
+<junction x="60.96" y="35.56"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
+<wire x1="55.88" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="HALL_GND1" gate="G$1" pin="TP"/>
 <wire x1="66.04" y1="30.48" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="TP15" gate="G$1" pin="TP"/>
+<pinref part="TP18" gate="G$1" pin="TP"/>
+<junction x="60.96" y="30.48"/>
 </segment>
 <segment>
-<wire x1="22.86" y1="30.48" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="HALL_GND" gate="G$1" pin="TP"/>
+<wire x1="7.62" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="30.48" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="30.48" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<pinref part="TP10" gate="G$1" pin="TP"/>
+<junction x="15.24" y="30.48"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="35.56" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
@@ -1742,6 +1836,36 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 <junction x="99.06" y="40.64"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="HALL_3" class="0">
+<segment>
+<wire x1="7.62" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<label x="27.94" y="33.02" size="1.27" layer="95" xref="yes"/>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<pinref part="TP9" gate="G$1" pin="TP"/>
+<wire x1="15.24" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
+<junction x="15.24" y="33.02"/>
+</segment>
+<segment>
+<pinref part="HALL" gate="G$1" pin="SIG"/>
+<wire x1="116.84" y1="48.26" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
+<label x="121.92" y="48.26" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TOUCH" class="0">
+<segment>
+<pinref part="TP20" gate="G$1" pin="TP"/>
+<pinref part="TP19" gate="G$1" pin="TP"/>
+<wire x1="165.1" y1="50.8" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="50.8" x2="172.72" y2="50.8" width="0.1524" layer="91"/>
+<junction x="165.1" y="50.8"/>
+<label x="175.26" y="50.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="50.8" x2="175.26" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="TP23" gate="G$1" pin="TP"/>
+<wire x1="154.94" y1="55.88" x2="172.72" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="55.88" x2="172.72" y2="50.8" width="0.1524" layer="91"/>
+<junction x="172.72" y="50.8"/>
 </segment>
 </net>
 </nets>

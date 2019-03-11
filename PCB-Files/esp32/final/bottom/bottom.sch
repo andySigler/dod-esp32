@@ -4062,84 +4062,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="buzzer" urn="urn:adsk.eagle:library:113">
-<description>&lt;b&gt;Speakers and Buzzers&lt;/b&gt;&lt;p&gt;
-&lt;ul&gt;Distributors:
-&lt;li&gt;Buerklin
-&lt;li&gt;Spoerle
-&lt;li&gt;Schukat
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="KSS1201" urn="urn:adsk.eagle:footprint:5231/1" library_version="1">
-<description>&lt;b&gt;SPEAKER&lt;/b&gt;</description>
-<wire x1="2.794" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="3.302" y1="3.048" x2="3.302" y2="2.032" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="6.096" width="0.1524" layer="21"/>
-<circle x="3.302" y="2.54" radius="0.762" width="0.1524" layer="21"/>
-<pad name="+" x="3.2512" y="0" drill="0.9144" diameter="2.159" shape="octagon"/>
-<pad name="-" x="-3.2512" y="0" drill="0.9144" diameter="2.159" shape="octagon"/>
-<text x="3.937" y="5.08" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.556" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="KSS1201" urn="urn:adsk.eagle:package:5268/1" type="box" library_version="1">
-<description>SPEAKER</description>
-<packageinstances>
-<packageinstance name="KSS1201"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="SP" urn="urn:adsk.eagle:symbol:5218/1" library_version="1">
-<wire x1="-1.905" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.54" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="0" x2="1.905" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="0" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
-<text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="KSS1201" urn="urn:adsk.eagle:component:5303/1" prefix="SP" library_version="1">
-<description>&lt;b&gt;SPEAKER&lt;/b&gt;&lt;p&gt;
-Source: Schukat</description>
-<gates>
-<gate name="1" symbol="SP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="KSS1201">
-<connects>
-<connect gate="1" pin="1" pad="+"/>
-<connect gate="1" pin="2" pad="-"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5268/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">
 <packages>
 <package name="JST-PH-2-SMT-RA" urn="urn:adsk.eagle:footprint:6240046/1" library_version="2">
@@ -4228,6 +4150,32 @@ JST PH 2-pin thru-home side entry</description>
 <text x="-2.914" y="-6.096" size="1.4224" layer="21" ratio="12">+</text>
 <text x="2.271" y="-6.096" size="1.4224" layer="21" ratio="12">-</text>
 </package>
+<package name="AL60P" urn="urn:adsk.eagle:footprint:6240015/1" library_version="2">
+<description>&lt;b&gt;SPEAKER&lt;/b&gt;</description>
+<circle x="0" y="0" radius="6.096" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-3.7592" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<pad name="2" x="3.7592" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<text x="-2.54" y="6.35" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.8862" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="AL11P" urn="urn:adsk.eagle:footprint:6240016/1" library_version="2">
+<description>&lt;b&gt;SPEAKER&lt;/b&gt;</description>
+<circle x="0" y="0" radius="5.715" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="6.223" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.016" width="0.1524" layer="21"/>
+<pad name="-" x="-2.286" y="0" drill="1.016" diameter="1.905" shape="octagon"/>
+<pad name="+" x="2.286" y="0" drill="1.016" diameter="1.905" shape="octagon"/>
+<text x="-3.175" y="6.35" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-3.175" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="PS12" urn="urn:adsk.eagle:footprint:6240017/1" library_version="2">
+<circle x="0" y="0" radius="6.096" width="0.1524" layer="21"/>
+<pad name="P$1" x="-2.5" y="0" drill="1" diameter="2.54"/>
+<pad name="P$2" x="2.5" y="0" drill="1" diameter="2.54"/>
+<text x="-2.54" y="6.35" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.8862" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="JST-PH-2-SMT-RA" urn="urn:adsk.eagle:package:6240692/1" type="box" library_version="2">
@@ -4256,6 +4204,23 @@ JST PH 2-pin thru-home side entry</description>
 <packageinstance name="JST-PH-2-SMT"/>
 </packageinstances>
 </package3d>
+<package3d name="AL60P" urn="urn:adsk.eagle:package:6240661/1" type="box" library_version="2">
+<description>&lt;b&gt;SPEAKER&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="AL60P"/>
+</packageinstances>
+</package3d>
+<package3d name="AL11P" urn="urn:adsk.eagle:package:6240662/1" type="box" library_version="2">
+<description>&lt;b&gt;SPEAKER&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="AL11P"/>
+</packageinstances>
+</package3d>
+<package3d name="PS12" urn="urn:adsk.eagle:package:6240663/1" type="box" library_version="2">
+<packageinstances>
+<packageinstance name="PS12"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="PINHD2" urn="urn:adsk.eagle:symbol:6239527/1" library_version="2">
@@ -4267,6 +4232,23 @@ JST PH 2-pin thru-home side entry</description>
 <text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="SP" urn="urn:adsk.eagle:symbol:6239510/1" library_version="2">
+<wire x1="-1.905" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0" x2="1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="-" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="+" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4333,6 +4315,50 @@ JST PH 2-pin thru-home side entry</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SPEAKER" urn="urn:adsk.eagle:component:6241000/1" prefix="SP" library_version="2">
+<description>&lt;b&gt;SPEAKER&lt;/b&gt;&lt;p&gt; Source: Buerklin&lt;p&gt;Added PS12 (for part # PS1240 piezo) &lt;p&gt;http://www.ladyada.net/library/pcb/eaglelibrary.html&lt;p&gt;</description>
+<gates>
+<gate name="S1" symbol="SP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="/AL60P" package="AL60P">
+<connects>
+<connect gate="S1" pin="+" pad="1"/>
+<connect gate="S1" pin="-" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240661/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/AL11P" package="AL11P">
+<connects>
+<connect gate="S1" pin="+" pad="+"/>
+<connect gate="S1" pin="-" pad="-"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240662/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/PS12" package="PS12">
+<connects>
+<connect gate="S1" pin="+" pad="P$1"/>
+<connect gate="S1" pin="-" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240663/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -4356,7 +4382,7 @@ JST PH 2-pin thru-home side entry</description>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="2k"/>
+<part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="4.7k"/>
 <part name="C10" library="SparkFun" deviceset="CAP" device="0402-CAP" value="10uF"/>
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -4381,7 +4407,6 @@ JST PH 2-pin thru-home side entry</description>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C5" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="C6" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="SP1" library="buzzer" library_urn="urn:adsk.eagle:library:113" deviceset="KSS1201" device="" package3d_urn="urn:adsk.eagle:package:5268/1"/>
 <part name="RESET" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP13R" package3d_urn="urn:adsk.eagle:package:27967/1"/>
 <part name="GPIO0" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP13R" package3d_urn="urn:adsk.eagle:package:27967/1"/>
 <part name="TX" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP13R" package3d_urn="urn:adsk.eagle:package:27967/1"/>
@@ -4405,6 +4430,12 @@ JST PH 2-pin thru-home side entry</description>
 <part name="TP12" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="C7" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="C9" library="SparkFun" deviceset="CAP" device="0402-CAP" value="10uF"/>
+<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="10k"/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="SP2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="SPEAKER" device="/PS12" package3d_urn="urn:adsk.eagle:package:6240663/1" value="PS1240P02BT"/>
+<part name="RESET1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP13R" package3d_urn="urn:adsk.eagle:package:27967/1"/>
+<part name="RESET2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP13R" package3d_urn="urn:adsk.eagle:package:27967/1"/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4451,6 +4482,7 @@ The dod sends URL on change or on sleep.</text>
 <text x="76.2" y="104.14" size="1.778" layer="150">A1_DAC1</text>
 <text x="76.2" y="134.62" size="1.778" layer="150">SCK/IO5</text>
 <text x="76.2" y="106.68" size="1.778" layer="150">SDA/IO23</text>
+<text x="76.2" y="109.22" size="1.778" layer="150">SCL</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -4569,10 +4601,6 @@ The dod sends URL on change or on sleep.</text>
 <attribute name="NAME" x="146.304" y="129.921" size="1.778" layer="95"/>
 <attribute name="VALUE" x="146.304" y="124.841" size="1.778" layer="96"/>
 </instance>
-<instance part="SP1" gate="1" x="259.08" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="252.73" y="105.41" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="262.255" y="105.41" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="RESET" gate="G$1" x="238.76" y="160.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="237.49" y="158.75" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="240.03" y="161.29" size="1.778" layer="97" rot="R90"/>
@@ -4662,6 +4690,28 @@ The dod sends URL on change or on sleep.</text>
 <instance part="C9" gate="G$1" x="121.92" y="111.76" smashed="yes">
 <attribute name="NAME" x="123.444" y="114.681" size="1.778" layer="95"/>
 <attribute name="VALUE" x="123.444" y="109.601" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="111.76" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="110.2614" y="151.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="115.062" y="151.13" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+6" gate="VCC" x="111.76" y="170.18" smashed="yes">
+<attribute name="VALUE" x="114.3" y="170.18" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SP2" gate="S1" x="259.08" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="252.73" y="105.41" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="262.255" y="105.41" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="RESET1" gate="G$1" x="233.68" y="160.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="232.41" y="158.75" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="234.95" y="161.29" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="RESET2" gate="G$1" x="228.6" y="142.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="227.33" y="140.97" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="229.87" y="143.51" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="P+8" gate="VCC" x="236.22" y="144.78" smashed="yes">
+<attribute name="VALUE" x="233.68" y="142.24" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -4770,11 +4820,11 @@ The dod sends URL on change or on sleep.</text>
 <wire x1="134.62" y1="121.92" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SP1" gate="1" pin="2"/>
 <wire x1="259.08" y1="114.3" x2="259.08" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="119.38" x2="264.16" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="119.38" x2="264.16" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="SP2" gate="S1" pin="-"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -4848,6 +4898,16 @@ The dod sends URL on change or on sleep.</text>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="160.02" x2="111.76" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="RESET2" gate="G$1" pin="TP"/>
+<wire x1="231.14" y1="142.24" x2="236.22" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="P+8" gate="VCC" pin="VCC"/>
+</segment>
 </net>
 <net name="HALL_1" class="0">
 <segment>
@@ -4901,6 +4961,15 @@ The dod sends URL on change or on sleep.</text>
 <wire x1="241.3" y1="160.02" x2="259.08" y2="160.02" width="0.1524" layer="91"/>
 <label x="259.08" y="160.02" size="1.27" layer="95" xref="yes"/>
 <pinref part="RESET" gate="G$1" pin="TP"/>
+<pinref part="RESET1" gate="G$1" pin="TP"/>
+<wire x1="241.3" y1="160.02" x2="236.22" y2="160.02" width="0.1524" layer="91"/>
+<junction x="241.3" y="160.02"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="149.86" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="144.78" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
+<label x="104.14" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
@@ -4948,13 +5017,6 @@ The dod sends URL on change or on sleep.</text>
 <wire x1="73.66" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
 <label x="76.2" y="116.84" size="1.778" layer="150"/>
 <pinref part="X2" gate="G$1" pin="IO18"/>
-</segment>
-</net>
-<net name="SCL" class="0">
-<segment>
-<wire x1="73.66" y1="109.22" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
-<label x="76.2" y="109.22" size="1.778" layer="150"/>
-<pinref part="X2" gate="G$1" pin="IO22"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -5162,15 +5224,15 @@ The dod sends URL on change or on sleep.</text>
 <label x="193.04" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="IO5"/>
-<label x="86.36" y="134.62" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="101.6" x2="193.04" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
 <label x="182.88" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="IO22"/>
+<wire x1="73.66" y1="109.22" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
+<label x="86.36" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IO13_A12" class="0">
@@ -5227,10 +5289,16 @@ The dod sends URL on change or on sleep.</text>
 <label x="86.36" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SP1" gate="1" pin="1"/>
 <wire x1="259.08" y1="104.14" x2="259.08" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="99.06" x2="251.46" y2="99.06" width="0.1524" layer="91"/>
 <label x="251.46" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="SP2" gate="S1" pin="+"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="X2" gate="G$1" pin="IO5"/>
+<wire x1="73.66" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
