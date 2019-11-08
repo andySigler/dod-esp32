@@ -5,8 +5,8 @@
 #include <esp_wifi.h>
 #include <WiFi.h>
 
-const char* ssid     = "dirtyfeet";
-const char* password = "clinton2Ahill";
+const char* ssid     = "WIFISSDID";
+const char* password = "WIFIPASSWORD";
 
 IPAddress local_IP(192, 168, 1, 21);
 IPAddress gateway(192, 168, 1, 1);
